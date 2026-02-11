@@ -1,0 +1,5 @@
+# MkDocs Material 依赖
+mkdocs-material>=9.5.0
+
+# Markdown 扩展
+pymdown-extensions>=10.0
