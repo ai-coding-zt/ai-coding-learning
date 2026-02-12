@@ -3,22 +3,17 @@ site_description: 从零开始学习 AI 辅助编程，掌握未来开发者的�
 site_author: AI Coding Learning
 site_url: https://ai-coding-learning.github.io
 
-# 仓库信息
 repo_name: ai-coding-learning
 repo_url: https://github.com/yourusername/ai-coding-learning
 edit_uri: edit/main/docs/
 
-# 版权信息
-copyright: Copyright &copy; 2024 AI Coding Learning
+copyright: Copyright &copy; 2024-2026 AI Coding Learning
 
-# 主题配置
 theme:
   name: material
   language: zh
   
-  # 配色方案
   palette:
-    # 浅色模式
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
@@ -27,7 +22,6 @@ theme:
         icon: material/brightness-7
         name: 切换到深色模式
     
-    # 深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
@@ -36,44 +30,31 @@ theme:
         icon: material/brightness-4
         name: 切换到浅色模式
   
-  # 字体
   font:
     text: Roboto
     code: Roboto Mono
   
-  # 图标和 Logo
   logo: assets/logo.png
   favicon: assets/favicon.png
   
-  # 功能特性
   features:
-    # 导航
-    - navigation.tabs           # 顶部标签导航
-    - navigation.tabs.sticky    # 粘性标签
-    - navigation.sections       # 章节导航
-    - navigation.expand         # 默认展开导航
-    - navigation.indexes        # 章节索引页
-    - navigation.top            # 回到顶部按钮
-    - navigation.footer         # 上一页/下一页
-    
-    # 搜索
-    - search.suggest            # 搜索建议
-    - search.highlight          # 高亮搜索结果
-    - search.share              # 分享搜索结果
-    
-    # 内容
-    - content.code.copy         # 代码复制按钮
-    - content.code.annotate     # 代码注释
-    - content.tabs.link         # 链接标签页
-    - content.tooltips          # 工具提示
-    
-    # 标题
-    - header.autohide           # 自动隐藏标题栏
-    
-    # 其他
-    - announce.dismiss          # 可关闭的公告
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - announce.dismiss
 
-# 插件
 plugins:
   - search:
       separator: '[\s\u200b\-,:!=[\]()"/]+|\.(?!\d)|&[lg]t;|(?!=\w)|(?=\w)'
@@ -81,17 +62,13 @@ plugins:
         - zh
         - en
 
-# 额外 CSS
 extra_css:
   - stylesheets/extra.css
 
-# 额外 JavaScript
 extra_javascript:
   - javascripts/extra.js
 
-# 扩展 Markdown
 markdown_extensions:
-  # Python Markdown
   - abbr
   - admonition
   - attr_list
@@ -101,8 +78,6 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
-  
-  # PyMdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -135,30 +110,21 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# 额外配置
 extra:
-  # 社交链接
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/yourusername
       name: GitHub
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/yourusername
-      name: Twitter
   
-  # 分析
   analytics:
     provider: google
     property: G-XXXXXXXXXX
   
-  # 版本
   version:
     provider: mike
   
-  # 其他
   generator: false
 
-# 页面导航
 nav:
   - 首页: index.md
   
@@ -191,9 +157,19 @@ nav:
     - Web开发: 06-examples/03-web-development/index.md
     - 算法实现: 06-examples/04-algorithms/index.md
     - 项目实战: 06-examples/05-projects/index.md
+  
+  - MCP 协议:
+    - 07-advanced/mcp/index.md
+  
+  - AI 编程技能:
+    - 07-advanced/skills/index.md
+  
+  - 智能体编程:
+    - 07-advanced/agentic-coding/index.md
+  
+  - 开源工具:
+    - 07-advanced/opencode/index.md
 
-# 严格模式
 strict: false
 
-# 开发服务器
 dev_addr: 127.0.0.1:8000
